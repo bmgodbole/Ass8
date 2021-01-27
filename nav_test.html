@@ -9,14 +9,14 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <style>
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "sans-serif";
   
 }
 * {
    box-sizing: border-box;
    margin:0;
    padding:0;
-   border-radius: 0 !important;
+  
 }
 
 .sidepanel  {
@@ -158,14 +158,70 @@ text-align: left;
   .trip
   {
     width:100%;
-	 
+	overflow:hidden; 
+   }
+   .btnfont{
+     font-family:  sans-serif;
+     font-style: normal;
+     font-size: 20px ! important; 
+  }
+  .comcontainer
+  {
+     display:flex;
+	 min-height:50vh;
+	 align-items:center;
+	 justify-content:center;
+	 background-color:white;
+	 background:url(background.jpg) no-repeat center /cover;
+  }
+  .camimgovr
+  {
+    width:90%;
+	display:flex;
+	margin:0,auto;
+	align-items:center;
+	justify-content:center;
+	
+  }
+  .camleft
+  {
+    display:flex;
+	width : 50%;
+	min-height:230px;
+    align-items:center;
+	justify-content:center;
+	flex-direction: column;
+	
+	background-color:white;
+	padding:20px;
+	margin-right: -80px;
+    z-index: 1;
+  }
+   .camright
+   {
+      width:50%;
+	  height:330px;
+	  background:url(cam3.jpg) no-repeat center /cover;
+     
+   }
+   .camdesc a 
+   {
+      text-decoration:none;
+	  text-transform:uppercase;
+	  background-color:lightgreen;
+	  color:white;
+	  padding:20px 30px;
+	  display:inline-block;
+	  letter-spacing:2px;
+	  float:right;
+	  margin:0;
    }
 </style>
 </head>
 <body>
 <div class="topcontainer">
 	<div class="topbar">
-		<div id="mySidepanel" class="sidepanel">
+				<div id="mySidepanel" class="sidepanel">
 					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
 					<a href="#">About</a>
 					 <a href="#">Services</a>
@@ -191,33 +247,54 @@ text-align: left;
 			 <h1> Deep  South  West , </h1>
 			 <h1> Dominican Republic </h1> <br>
 			 <div class="booknow">
-			   <a href="#">  <button class="btn btn-secondary btn-success"> BOOK NOW </button>
+			   <a href="#">  <button class="btn btn-secondary btn-success btnfont"> BOOK NOW </button> </a>
 			</div>
    
         </div>
-   </div>
+   
 
 <div class="trip">
          <div class="row" style="margin-left:100px">
-		      <div class="col-xl-4  col-lg-4 col-md-4 col-sm-12 col-12">
-			     <img src="daytrip.png" alt="daytrips" class="img-fluid">
-               </div>
-			   <div class="col-xl-4  col-lg-4 col-md-4 col-sm-12 col-12">
-				 <img src="multidaytrip.png" alt="daytrips" class="img-fluid">
-               </div>
-			   <div class="col-xl-4  col-lg-4 col-md-4 col-sm-12 col-12">
-				 <img src="privatetour.png" alt="daytrips" class="img-fluid">
-                </div> 
+						 <div class="col-xl-4  col-lg-4 col-md-4 col-sm-12 col-12">
+								  <a href = "#"> <img src="daytrip.png" alt="daytrips" class="img-fluid"> </a>
+						</div>
+						<div class="col-xl-4  col-lg-4 col-md-4 col-sm-12 col-12">
+							 <a href = "#"><img src="multidaytrip.png" alt="daytrips" class="img-fluid"> </a>
+						 </div>
+					 <div class="col-xl-4  col-lg-4 col-md-4 col-sm-12 col-12">
+							<a href = "#"> <img src="privatetour.png" alt="daytrips" class="img-fluid"> </a>
+					</div> 
 		      </div>
-         </div>
+         
 </div>
+
+<div class="comcontainer">
+	<div class="camimgovr">
+
+		 <div class="camleft">
+		 <div class="camdesc">
+	        <h2> Welcome to deep </h2>
+	        <h2> Southwest </h2>
+	          <p>
+	             Discover with EcoTour Barahona,your specialist in Ecotourism a new
+	             face of Dominican Republic,more human,more authentic!	
+	          </p>
+			  <a href="#"> KNOW MORE  </a>
+           </div>
+	     </div>
+         <div class="camright"> 
+             
+         </div>
+      </div>   
+</div>
+
 <h2>Collapsed Sidepanel</h2>
 <p>Click on the hamburger menu/bar icon to open the sidepanel.</p>
 <p> Paragraph............</p>
 <p> Paragraph............</p>
 <p> Paragraph............</p>
 <p> Paragraph............</p>
-</div>
+
 <script>
     
 
